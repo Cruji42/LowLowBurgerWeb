@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-
+import { DataTablesModule } from 'angular-datatables';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataTablesModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
